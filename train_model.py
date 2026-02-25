@@ -16,7 +16,8 @@ data = pd.DataFrame({
 })
 
 
-# -----------------------------
+# -Exploita_Project ------
+#---mohdsahir10-----------
 # TRAIN MODEL
 # -----------------------------
 X = data.drop("label", axis=1)
@@ -36,3 +37,4 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 joblib.dump(model, "phishing_model.pkl")
 print("\nModel saved as phishing_model.pkl")
+
